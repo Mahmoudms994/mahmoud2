@@ -7,13 +7,14 @@
     <title>javascript</title>
     <script>
      document.addEventListener("DOMContentLoaded",function(){
-         document.querySelectorAll("button").forEach(function(button){
-             button.onclick = function(){
-                 document.querySelector("h1"),style.color = button.database.color;
+         document.querySelector("select").onchange = function(){
+             document.querySelector("h1").style.color = this.value;
+         
+        //  document.querySelectorAll("select").forEach(function(option){
+        //      option.value = function(){
+        //          document.querySelector("h1"),style.color = option.database.color
              };
          });
-     }
-     );
     </script>
 </head>
 <body>
