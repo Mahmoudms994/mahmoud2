@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <script>
-        document.addEventListener("DOMContentLoaded",function(){});
+        document.addEventListener("DOMContentLoaded", () => {
+            const  newTask = document.querySelector;
+            document.querySelector("form").onsubmit = () => {
+            let sh= document.querySelector("#task").Value;
+            document.querySelector("task").value;
+            return false;
+            };
+            submit.disable = true;
+            newTask.onkeyup
+        });
     </script>
 </head>
 <body>
@@ -14,7 +23,7 @@
     <ul id="task"></ul>
     <form>
         <input type="text" id="task" placeholder="write a mission" />
-        <input type="submit" value="add" />
+        <input type="submit" value="add" id="submit" />
     </form>
 </body>
 </html>
